@@ -6,6 +6,8 @@ public static void main(String[] args)
 {
 Scanner kb = new Scanner(System.in);
 String name1, name2, name3;
+
+while(true) {  
 System.out.println("Enter three names.");
 System.out.println("They can be the same or different.");
 System.out.print("First name >> ");
@@ -17,6 +19,11 @@ name3 = kb.nextLine(); // nextLine is missing a ()
 compareNames(name1, name2);
 compareNames(name1, name3);
 compareNames(name2, name3);
+ System.out.print("Do you want to enter another set? (y/n) >> ");
+  if (!kb.nextLine().equalsIgnoreCase("y")) {
+   break;
+    }
+}
 }
 public static void compareNames(String n1, String n2) //Changed method name from comparNames to compareNames and added the missing type for n2
 {
@@ -28,5 +35,4 @@ else { //Added a opening curly bracket
 System.out.println(" are different");
 }//Added a closing curly bracket
 }
-
 }
