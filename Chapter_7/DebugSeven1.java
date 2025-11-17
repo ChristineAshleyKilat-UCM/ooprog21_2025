@@ -1,6 +1,6 @@
 // Makes String comparisons
 import java.util.*;
-public class DebugSeven1
+class DebugSeven1
 {
 public static void main(String[] args)
 {
@@ -28,4 +28,5 @@ else { //Added a opening curly bracket
 System.out.println(" are different");
 }//Added a closing curly bracket
 }
+
 }
